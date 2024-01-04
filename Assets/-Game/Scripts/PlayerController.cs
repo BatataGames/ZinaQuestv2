@@ -51,10 +51,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public void Die()
-    {
-        animator.SetBool("isDead", true);
-    }
+
 
 
 

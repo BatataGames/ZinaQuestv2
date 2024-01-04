@@ -6,11 +6,13 @@ public class PlayerAnimationController : MonoBehaviour
 {
     private Animator animator;
     private PlayerController playerController;
-    // Start is called before the first frame update
+    private Player player;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         playerController = GetComponent<PlayerController>();
+        player = GetComponent<Player>();
     }
 
 
@@ -19,6 +21,7 @@ public class PlayerAnimationController : MonoBehaviour
     {
         HandleAnimations();
         HandleAttack();
+        HandleDeath();
     }
 
     private void HandleAnimations()
@@ -38,6 +41,14 @@ public class PlayerAnimationController : MonoBehaviour
         else if (Input.GetMouseButtonUp(0)) // 0 is the left mouse button
         {
             animator.SetBool("isAttack", false);
+        }
+    }
+
+    private void HandleDeath()
+    {
+        if (player.health <= 0)
+        {
+            animator.SetBool("isDead", true);
         }
     }
 }
