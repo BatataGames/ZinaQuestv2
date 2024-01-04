@@ -280,7 +280,6 @@ GameObject:
   - component: {fileID: 509965140}
   - component: {fileID: 509965141}
   - component: {fileID: 509965142}
-  - component: {fileID: 509965143}
   m_Layer: 0
   m_Name: Abeille
   m_TagString: Enemy
@@ -448,21 +447,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 509965135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8408dca37ce3f764b88b4590171da01e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d22026c685fb274baf0cd3730732793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &509965143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509965135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8408dca37ce3f764b88b4590171da01e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  pnj:
+    health: 20
+    healthMax: 20
+    damage: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
